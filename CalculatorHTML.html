@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+  <h1 class="title">The Amazing Pyramidal Calculator</h1>
+</head>
+
+<body ng-app='PyramidalCalculator' ng-controller='MainCtrl'>
+    <p id="numWindow" class="window" align="center">{{ display }}</p>
+    <div class="row" align="center">
+      <button id="AC" ng-click="AC()">AC</button>
+      <button id="CE" ng-click="CE()">CE</button>
+      <button id='mod' ng-click="addToScreen('mod')">%</button>
+      <button id='div' ng-click="addToScreen('div')">/</button>
+      <button id='mult' ng-click="addToScreen('mult')">*</button>
+      <button id='min' ng-click="addToScreen('min')">-</button>
+      <button id='plu' ng-click="addToScreen('plu')">+</button>
+    </div>
+    <div class="row" align="center">
+      <button id='one' ng-click="addToScreen('one')">1</button>
+      <button id='two' ng-click="addToScreen('two')">2</button>
+      <button id='three' ng-click="addToScreen('three')">3</button>
+      <button id='four' ng-click="addToScreen('four')">4</button>
+      <button id='five' ng-click="addToScreen('five')">5</button>
+    </div>
+    <div class="row" align="center">
+      <button id='six' ng-click="addToScreen('six')">6</button>
+      <button id='seven' ng-click="addToScreen('seven')">7</button>
+      <button id='eight' ng-click="addToScreen('eight')">8</button>
+    </div>
+    <div class="row" align="center">
+      <button id='nine' ng-click="addToScreen('nine')">9</button>
+      <button id='zero' ng-click="addToScreen('zero')">0</button>
+    </div>
+    <div class="row" align="center">
+      <button id="eq" ng-click="solver()">=</button>
+    </div>
+</body>
+
+</html>
